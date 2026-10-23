@@ -40,8 +40,9 @@ DNS de sprintglassdepannage.com chez IONOS :
 | CNAME | `www` | `kaatafr.github.io` |
 | TXT | `_github-pages-challenge-KaataFR` | code de vérification du domaine (GitHub → Settings → Pages) |
 
-- Les enregistrements e-mail d'IONOS (MX, SPF, DKIM, DMARC) n'ont pas été modifiés.
-- sprintglassdepannage.fr est redirigé vers https://sprintglassdepannage.com par IONOS.
+- `www.sprintglassdepannage.com` renvoie vers l'adresse sans www (redirection faite par GitHub).
+- Les enregistrements e-mail d'IONOS (MX, SPF, DKIM, DMARC) n'ont pas été modifiés. L'adresse contact@sprintglassdepannage.com est une redirection IONOS vers Sprintglass75@gmail.com (pas de boîte de réception, pas de filtre anti-spam côté IONOS).
+- sprintglassdepannage.fr (et www) est redirigé vers https://sprintglassdepannage.com par IONOS, avec le certificat SSL inclus dans le pack de domaines IONOS.
 - Changer de domaine : remplacer l'adresse dans `CNAME`, dans les pages HTML (adresses canoniques, données structurées), `sitemap.xml` et `robots.txt`.
 
 L'envoi de position ne fonctionne qu'en HTTPS (ou sur `localhost`). Pour tester en local : `npx serve .` à la racine du dépôt, puis ouvrir l'adresse indiquée. Attention, le formulaire de devis y envoie de vrais e-mails à Sprintglass75@gmail.com.
