@@ -1,0 +1,3 @@
+# GitHub Pages : le README sert à l'équipe, il n'est pas publié sur le site.
+exclude:
+  - README.md
